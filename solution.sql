@@ -1,16 +1,9 @@
--- ============================================
--- SOLUTION - INSERT STUDENT RECORDS
--- ============================================
-
-USE CollegeDB;
-
--- Insert student records
-INSERT INTO Student
-    (StudentID, StudentName, Gender, DepartmentID)
+create database elango;
+use elango;
+INSERT INTO Student (StudentID, StudentName, Gender, DepartmentID)
 VALUES
-    (1001, 'Arun', 'Male', 101),
-    (1002, 'Divya', 'Female', 102),
-    (1003, 'Karthik', 'Male', 101);
+(1001, 'Arun', 'Male', 101),
+(1002, 'Divya', 'Female', 102),
+(1003, 'Karthik', 'Male', 101);
 
--- Display all student records
 SELECT * FROM Student;
